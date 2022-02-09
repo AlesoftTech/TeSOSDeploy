@@ -80813,7 +80813,7 @@ s=q}while(true)switch(s){case 0:l=t.N
 k=P.ah(["answer",b],l,l)
 q=3
 s=6
-return P.M(Z.eR("/discomfortreports/"+a,k),$async$tb)
+return P.M(Z.eR("/discomfortreportsNotify/"+a,k),$async$tb)
 case 6:n.u()
 q=1
 s=5
@@ -80832,10 +80832,10 @@ return P.A($async$tb,r)},
 tc(a,b,c,d){return this.acl(a,b,c,d)},
 acl(a,b,c,d){var s=0,r=P.B(t.z),q=1,p,o=[],n=this,m,l,k
 var $async$tc=P.x(function(e,f){if(e===1){p=f
-s=q}while(true)switch(s){case 0:l=P.ah(["answer",c,"aproved",!0,"serial",d,"profesional",b],t.N,t.K)
+s=q}while(true)switch(s){case 0:l=P.ah(["answer","Reporte aprobado, "+c,"aproved",!0,"serial",d,"profesional",b],t.N,t.K)
 q=3
 s=6
-return P.M(Z.eR("/reports/"+a,l),$async$tc)
+return P.M(Z.eR("/reportsNotify/"+a,l),$async$tc)
 case 6:n.u()
 q=1
 s=5
@@ -80854,10 +80854,10 @@ return P.A($async$tc,r)},
 xS(a,b,c){return this.ack(a,b,c)},
 ack(a,b,c){var s=0,r=P.B(t.z),q=1,p,o=[],n=this,m,l,k
 var $async$xS=P.x(function(d,e){if(d===1){p=e
-s=q}while(true)switch(s){case 0:l=P.ah(["answer",c,"aproved",!1,"profesional",b],t.N,t.K)
+s=q}while(true)switch(s){case 0:l=P.ah(["answer","Reporte rechazado, "+c,"aproved",!1,"profesional",b],t.N,t.K)
 q=3
 s=6
-return P.M(Z.eR("/reports/"+a,l),$async$xS)
+return P.M(Z.eR("/reportsNotify/"+a,l),$async$xS)
 case 6:n.u()
 q=1
 s=5
